@@ -1,10 +1,10 @@
---- a/src/libcrypto.c	2018-10-05 19:35:10.847623726 +0200
-+++ b/src/libcrypto.c	2018-10-05 19:35:01.023626712 +0200
+--- a/src/libcrypto.c	2018-10-05 19:47:47.495535227 +0200
++++ b/src/libcrypto.c	2018-10-05 19:51:00.055533818 +0200
 @@ -43,6 +43,7 @@
  #include <openssl/hmac.h>
  #include <openssl/opensslv.h>
  #include <openssl/rand.h>
 +#include <openssl/modes.h>
- 
  #include "libcrypto-compat.h"
  
+ #ifdef HAVE_OPENSSL_AES_H
